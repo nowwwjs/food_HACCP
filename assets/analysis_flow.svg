@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">스마트 HACCP 분석 흐름</title>
+  <desc id="desc">두 공공데이터를 결합해 지역과 업종별 스마트 HACCP 확산 우선 검토 후보군을 도출하는 과정</desc>
+  <defs>
+    <style>
+      .title { font: 700 42px 'Malgun Gothic', Arial, sans-serif; fill: #17233A; }
+      .subtitle { font: 400 22px 'Malgun Gothic', Arial, sans-serif; fill: #5D6B82; }
+      .boxTitle { font: 700 25px 'Malgun Gothic', Arial, sans-serif; fill: #17233A; }
+      .boxText { font: 400 19px 'Malgun Gothic', Arial, sans-serif; fill: #4B5870; }
+      .small { font: 400 17px 'Malgun Gothic', Arial, sans-serif; fill: #4B5870; }
+      .outTitle { font: 700 24px 'Malgun Gothic', Arial, sans-serif; fill: #FFFFFF; }
+      .outText { font: 400 18px 'Malgun Gothic', Arial, sans-serif; fill: #EAF3FF; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#243B5A" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#90A4BF"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#F6F9FD"/>
+  <text x="800" y="78" text-anchor="middle" class="title">스마트 HACCP 확산 우선 검토 후보군 분석 흐름</text>
+  <text x="800" y="118" text-anchor="middle" class="subtitle">HACCP 지정현황과 스마트 HACCP 인증업체 정보를 결합하여 지역·업종별 후보군 도출</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="185" width="330" height="145" rx="18" fill="#FFFFFF" stroke="#B7D3F5" stroke-width="2"/>
+    <rect x="1170" y="185" width="330" height="145" rx="18" fill="#FFFFFF" stroke="#B7D3F5" stroke-width="2"/>
+  </g>
+  <circle cx="145" cy="230" r="23" fill="#2678D8"/>
+  <text x="145" y="238" text-anchor="middle" style="font:700 22px Arial;fill:#fff;">1</text>
+  <text x="190" y="232" class="boxTitle">HACCP 지정현황</text>
+  <text x="145" y="275" class="boxText">전체 HACCP 인증업체</text>
+  <text x="145" y="303" class="boxText">지역 · 업종 · 영업등록번호</text>
+  <circle cx="1215" cy="230" r="23" fill="#2678D8"/>
+  <text x="1215" y="238" text-anchor="middle" style="font:700 22px Arial;fill:#fff;">2</text>
+  <text x="1260" y="232" class="boxTitle">스마트 HACCP 정보</text>
+  <text x="1215" y="275" class="boxText">스마트 HACCP 등록업체</text>
+  <text x="1215" y="303" class="boxText">영업등록번호 · 시도 · 시군구</text>
+
+  <path d="M430 258 H595" stroke="#90A4BF" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M1170 258 H1005" stroke="#90A4BF" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="585" y="185" width="430" height="145" rx="18" fill="#EAF4FF" stroke="#72AEEB" stroke-width="2"/>
+  </g>
+  <circle cx="630" cy="230" r="23" fill="#1565C0"/>
+  <text x="630" y="238" text-anchor="middle" style="font:700 22px Arial;fill:#fff;">3</text>
+  <text x="675" y="232" class="boxTitle">업체 단위 결합</text>
+  <text x="630" y="275" class="boxText">영업등록번호 기준 통합</text>
+  <text x="630" y="303" class="boxText">미일치 건은 업체명 · 시군구 확인</text>
+
+  <path d="M800 330 V400" stroke="#90A4BF" stroke-width="4" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="410" y="410" width="780" height="155" rx="18" fill="#FFFFFF" stroke="#C8D6E7" stroke-width="2"/>
+  </g>
+  <circle cx="470" cy="458" r="23" fill="#4C82B8"/>
+  <text x="470" y="466" text-anchor="middle" style="font:700 22px Arial;fill:#fff;">4</text>
+  <text x="515" y="458" class="boxTitle">지역 · 업종 표준화 및 기초지표 산출</text>
+  <text x="515" y="501" class="boxText">시도 × 시군구 × 업종별 HACCP 업체 수 · 스마트 HACCP 업체 수</text>
+  <text x="515" y="533" class="boxText">관측 전환율 · 미전환 업체 수</text>
+
+  <path d="M800 565 V595" stroke="#90A4BF" stroke-width="4" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="210" y="610" width="505" height="165" rx="18" fill="#FFF6E8" stroke="#EDC77C" stroke-width="2"/>
+    <rect x="885" y="610" width="505" height="165" rx="18" fill="#EAF7F0" stroke="#79C79F" stroke-width="2"/>
+  </g>
+  <text x="462" y="664" text-anchor="middle" class="boxTitle">등록 0건 관측 조합</text>
+  <text x="462" y="707" text-anchor="middle" class="boxText">데이터 점검 · 수요조사 우선 후보군</text>
+  <text x="462" y="741" text-anchor="middle" class="small">실제 미도입 여부와 데이터 결합 상태 확인</text>
+  <text x="1137" y="664" text-anchor="middle" class="boxTitle">등록 1건 이상 확인 조합</text>
+  <text x="1137" y="707" text-anchor="middle" class="boxText">전환 지원 우선 검토 후보군</text>
+  <text x="1137" y="741" text-anchor="middle" class="small">미전환 규모 · 낮은 관측 전환율을 함께 반영</text>
+
+  <path d="M1137 775 V812" stroke="#90A4BF" stroke-width="4" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="980" y="824" width="315" height="56" rx="15" fill="#1E5FAE"/>
+  </g>
+  <text x="1137" y="861" text-anchor="middle" class="outTitle">최종 지원 우선 검토 순위</text>
+</svg>
